@@ -1,0 +1,65 @@
+<!-- Виджет социальных сетей от автора: Shturman -->
+<section data-widgetid="138741" data-widgettype="custom" class="Widgets-module__widgetWrapper">
+    <div>
+        <section data-widgetid="129297" data-widgettype="custom" class="Widgets-module__widgetWrapper">
+            <div>
+                <div ng-repeat="widget in App.widgets">
+                    <custom-widget ng-if="widget.type == 'custom'" code="widget.code">
+                        <div ng-bind-html="$sce.trustAsHtml(code)">
+                            <div class="xbox">
+                                <div class="xbox__header">
+                                    <h4>Наши социальные сети:</h4>
+                                    <div class="social-box">
+                                        <!-- Укажите вместо '#' ссылку на ваш Discord -->
+                                        <a href="#" target="_blank" class="discord">
+                                            <img class="socicon" width="20px" height="20px" src="https://pic.survivalhost.org/images/2024/01/14/discord.png">
+                                            Discord
+                                        </a>
+                                        <!-- Укажите вместо '#' ссылку на ваш Паблик ВК -->
+                                        <a href="#" target="_blank" class="vk">
+                                            <img class="socicon" width="20px" height="20px" src="https://imgur.com/DCbqR2V.png">
+                                            ВКонтакте
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </custom-widget>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+<!-- Виджет лояльности Steam от автора: Shturman -->
+<section data-widgetid="137172" data-widgettype="custom" class="Widgets-module__widgetWrapper">
+    <div>
+        <div>
+            <div class="bonus-back">
+                <div class="bonus-title-main">
+                    <div class="bonus-title-block">
+                        <p class="bonus-name-ico">Добавляйте к нику название нашего сервера и получайте бесплатные бонусы!</p>
+                    </div>
+                </div>
+                <div class="bonus-items-ico">
+                    <div class="bonus-item-ico">
+                        <div class="bonusinfosteam">
+                            <div class="bonus-steam"></div>
+                            <!-- Измените текст ниже на тег вашего сервера -->
+                            <span class="bonus-title">NICKNAME | RUST PROJECT</span>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Пример одного блока описания услуги в товарах -->
+<div class="desc-service">
+    <div class="text-container">
+        <div class="desc-text"><b>Увеличенные рейты</b></div>
+        <div class="desc-text-info"><b>команда /rate</b></div>
+    </div>
+    <div class="pd-additional"><b>x10</b></div>
+</div>
